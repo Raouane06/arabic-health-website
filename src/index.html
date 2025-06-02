@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صحتك أولاً - دليلك للتعامل مع السكري وضغط الدم</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <h1>صحتك أولاً</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#diabetes">مرض السكري</a></li>
+                    <li><a href="#hypertension">ضغط الدم</a></li>
+                    <li><a href="#nutrition">التغذية الصحية</a></li>
+                    <li><a href="#tools">أدوات تفاعلية</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>إدارة السكري وضغط الدم تبدأ بالمعرفة</h2>
+                <p>موقع متكامل يوفر لك أحدث المعلومات والنصائح الطبية للتعامل مع السكري وضغط الدم بشكل فعال</p>
+                <div class="hero-buttons">
+                    <a href="#diabetes" class="btn btn-primary">تعرف على السكري</a>
+                    <a href="#hypertension" class="btn btn-secondary">تعرف على ضغط الدم</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets\doc.png" alt="إدارة السكري وضغط الدم">
+            </div>
+        </div>
+    </section>
+
+    <section class="diseases-section" id="diabetes">
+        <div class="container">
+            <h2 class="section-title">مرض السكري</h2>
+            <div class="disease-content">
+                <div class="disease-image">
+                    <img src="assets\diab.png" alt="مرض السكري">
+                </div>
+                <div class="disease-info">
+                    <h3>ما هو مرض السكري؟</h3>
+                    <p>مرض السكري هو حالة مزمنة تؤثر على طريقة تعامل الجسم مع الجلوكوز (السكر) في الدم. هناك نوعان رئيسيان من السكري: النوع الأول والنوع الثاني.</p>
+                    
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="types">أنواع السكري</button>
+                        <button class="tab-btn" data-tab="symptoms">الأعراض</button>
+                        <button class="tab-btn" data-tab="complications">المضاعفات</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="types">
+                        <ul>
+                            <li><strong>النوع الأول:</strong> مرض مناعي ذاتي حيث لا ينتج البنكرياس الأنسولين</li>
+                            <li><strong>النوع الثاني:</strong> مقاومة الجسم للأنسولين أو عدم إنتاج كمية كافية منه</li>
+                            <li><strong>سكري الحمل:</strong> يحدث أثناء الحمل وعادة ما يختفي بعد الولادة</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="symptoms">
+                        <ul>
+                            <li>العطش الشديد وكثرة التبول</li>
+                            <li>الجوع المستمر</li>
+                            <li>التعب والإرهاق</li>
+                            <li>عدم وضوح الرؤية</li>
+                            <li>بطء التئام الجروح</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="complications">
+                        <ul>
+                            <li>أمراض القلب والأوعية الدموية</li>
+                            <li>تلف الأعصاب (الاعتلال العصبي)</li>
+                            <li>تلف الكلى (اعتلال الكلى)</li>
+                            <li>تلف العين (اعتلال الشبكية)</li>
+                            <li>مشاكل القدم التي قد تؤدي إلى البتر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="diseases-section bg-gray" id="hypertension">
+        <div class="container">
+            <h2 class="section-title">ضغط الدم</h2>
+            <div class="disease-content reverse">
+                <div class="disease-image">
+                    <img src="assets\blood.png" alt="ضغط الدم">
+                </div>
+                <div class="disease-info">
+                    <h3>ما هو ضغط الدم المرتفع؟</h3>
+                    <p>ضغط الدم المرتفع (Hypertension) هو حالة تكون فيها قوة ضخ الدم ضد جدران الشرايين مرتفعة بما يكفي لتسبب مشاكل صحية.</p>
+                    
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="levels">مستويات ضغط الدم</button>
+                        <button class="tab-btn" data-tab="h-symptoms">الأعراض</button>
+                        <button class="tab-btn" data-tab="h-complications">المضاعفات</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="levels">
+                        <div class="blood-pressure-levels">
+                            <div class="level normal">
+                                <h4>طبيعي</h4>
+                                <p>أقل من 120/80 ملم زئبق</p>
+                            </div>
+                            <div class="level elevated">
+                                <h4>مرتفع</h4>
+                                <p>120-129/أقل من 80 ملم زئبق</p>
+                            </div>
+                            <div class="level stage1">
+                                <h4>المرحلة الأولى</h4>
+                                <p>130-139/80-89 ملم زئبق</p>
+                            </div>
+                            <div class="level stage2">
+                                <h4>المرحلة الثانية</h4>
+                                <p>140/90 ملم زئبق أو أعلى</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="h-symptoms">
+                        <ul>
+                            <li>الصداع الشديد</li>
+                            <li>التعب أو الارتباك</li>
+                            <li>مشاكل في الرؤية</li>
+                            <li>ألم في الصدر</li>
+                            <li>صعوبة في التنفس</li>
+                            <li>عدم انتظام ضربات القلب</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="h-complications">
+                        <ul>
+                            <li>النوبات القلبية أو السكتات الدماغية</li>
+                            <li>تمدد الأوعية الدموية</li>
+                            <li>فشل القلب</li>
+                            <li>ضعف وتضيق الأوعية الدموية في الكلى</li>
+                            <li>مشاكل في الذاكرة أو الفهم</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nutrition-section" id="nutrition">
+        <div class="container">
+            <h2 class="section-title">التغذية الصحية</h2>
+            <div class="nutrition-tabs">
+                <button class="nutrition-tab-btn active" data-tab="diabetes-nutrition">لمرضى السكري</button>
+                <button class="nutrition-tab-btn" data-tab="hypertension-nutrition">لمرضى ضغط الدم</button>
+            </div>
+            
+            <div class="nutrition-content active" id="diabetes-nutrition">
+                <div class="nutrition-cards">
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>الأطعمة المفيدة</h3>
+                        <ul>
+                            <li>الخضروات غير النشوية</li>
+                            <li>الفواكه قليلة السكر</li>
+                            <li>الحبوب الكاملة</li>
+                            <li>البروتينات الخالية من الدهون</li>
+                            <li>الدهون الصحية مثل المكسرات والأفوكادو</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <h3>الأطعمة الممنوعة</h3>
+                        <ul>
+                            <li>المشروبات المحلاة بالسكر</li>
+                            <li>الحلويات والسكريات المكررة</li>
+                            <li>الأطعمة المقلية</li>
+                            <li>الكربوهيدرات المكررة</li>
+                            <li>اللحوم المصنعة</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>نصائح غذائية</h3>
+                        <ul>
+                            <li>تناول وجبات صغيرة متكررة</li>
+                            <li>مراقبة كمية الكربوهيدرات</li>
+                            <li>قراءة الملصقات الغذائية</li>
+                            <li>شرب الماء بكثرة</li>
+                            <li>تناول الألياف الغذائية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nutrition-content" id="hypertension-nutrition">
+                <div class="nutrition-cards">
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>الأطعمة المفيدة</h3>
+                        <ul>
+                            <li>الخضروات الورقية</li>
+                            <li>التوت</li>
+                            <li>الشمندر</li>
+                            <li>الحليب قليل الدسم</li>
+                            <li>الشوفان</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <h3>الأطعمة الممنوعة</h3>
+                        <ul>
+                            <li>الأطعمة المالحة</li>
+                            <li>اللحوم المصنعة</li>
+                            <li>الأطعمة المعلبة</li>
+                            <li>الوجبات السريعة</li>
+                            <li>الكحول</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nutrition-card">
+                        <div class="nutrition-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>نصائح غذائية</h3>
+                        <ul>
+                            <li>تقليل الصوديوم (الملح)</li>
+                            <li>زيادة البوتاسيوم</li>
+                            <li>اتباع حمية DASH الغذائية</li>
+                            <li>تجنب الكافيين الزائد</li>
+                            <li>الحد من الدهون المشبعة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools-section bg-gray" id="tools">
+        <div class="container">
+            <h2 class="section-title">أدوات تفاعلية</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>حاسبة مؤشر كتلة الجسم</h3>
+                    <div class="bmi-calculator">
+                        <div class="form-group">
+                            <label for="height">الطول (سم):</label>
+                            <input type="number" id="height" placeholder="أدخل طولك">
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">الوزن (كجم):</label>
+                            <input type="number" id="weight" placeholder="أدخل وزنك">
+                        </div>
+                        <button id="calculateBmi" class="btn">احسب</button>
+                        <div id="bmi-result" class="result"></div>
+                        <div id="bmi-category" class="category"></div>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>تتبع مستوى السكر في الدم</h3>
+                    <div class="sugar-tracker">
+                        <div class="form-group">
+                            <label for="sugar-level">مستوى السكر (mg/dL):</label>
+                            <input type="number" id="sugar-level" placeholder="أدخل مستوى السكر">
+                        </div>
+                        <div class="form-group">
+                            <label for="measure-time">وقت القياس:</label>
+                            <select id="measure-time">
+                                <option value="fasting">صائم</option>
+                                <option value="before-meal">قبل الوجبة</option>
+                                <option value="after-meal">بعد الوجبة</option>
+                                <option value="random">عشوائي</option>
+                            </select>
+                        </div>
+                        <button id="add-sugar" class="btn">إضافة</button>
+                        <div class="sugar-chart-container">
+                            <canvas id="sugarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>مراقبة ضغط الدم</h3>
+                    <div class="pressure-tracker">
+                        <div class="form-group">
+                            <label for="systolic">الضغط الانقباضي (mm Hg):</label>
+                            <input type="number" id="systolic" placeholder="الرقم الأعلى">
+                        </div>
+                        <div class="form-group">
+                            <label for="diastolic">الضغط الانبساطي (mm Hg):</label>
+                            <input type="number" id="diastolic" placeholder="الرقم الأدنى">
+                        </div>
+                        <button id="add-pressure" class="btn">إضافة</button>
+                        <div id="pressure-result" class="result"></div>
+                        <div class="pressure-chart-container">
+                            <canvas id="pressureChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>800 123 4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@healthfirst.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>شارع الصحة، الرياض، المملكة العربية السعودية</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject">
+                                <option value="">اختر موضوع الرسالة</option>
+                                <option value="diabetes">استفسار عن السكري</option>
+                                <option value="hypertension">استفسار عن ضغط الدم</option>
+                                <option value="nutrition">استفسار عن التغذية</option>
+                                <option value="other">استفسار آخر</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="رسالتك" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>صحتك أولاً</h3>
+                    <p>نحن هنا لمساعدتك في إدارة السكري وضغط الدم بشكل أفضل</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#diabetes">مرض السكري</a></li>
+                        <li><a href="#hypertension">ضغط الدم</a></li>
+                        <li><a href="#nutrition">التغذية الصحية</a></li>
+                        <li><a href="#tools">أدوات تفاعلية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>اشترك في نشرتنا</h4>
+                    <p>احصل على آخر المعلومات والنصائح الطبية</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 صحتك أولاً. جميع الحقوق محفوظة.</p>
+                <div class="footer-credits">
+                    <p>صنع بكل ❤️ من أجل صحة أفضل</p>
+                    <p>By KRAMA raouane</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
